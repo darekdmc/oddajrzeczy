@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route,HashRouter as Router,Switch,NavLink} from "react-router-dom"
 import NotFound from "./components/NotFound"
-
+/*
 const activeStyle = {
   fontWeight: "bold"
 };
@@ -70,4 +70,9 @@ const App = () => (
       </Router>
     </div>
 );
+
+ */
+const App=()=>(
+    <h1>Sie ma</h1>
+)
 export default App;
