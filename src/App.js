@@ -6,16 +6,18 @@ import Form from "./components/Form";
 import Login from "./components/Login"
 import Register from "./components/Register"
 import Logout from "./components/Logout"
+import HomeThreeColumns from "./components/HomeThreeColumns";
+import HomeFourSteps from "./components/HomeFourSteps";
 
 const Home = () => {
     return (
     <>
         <HomeHeader/>
-        {/*<HomeThreeColumns/>*/}
-        {/*<Foursteps/>*/}
-        {/*<AboutUs/>*/}
-        {/*<WhomWeHelp/>*/}
-        {/*<Contact/>*/}
+        <HomeThreeColumns/>
+        <HomeFourSteps/>
+        {/*<HomeAboutUs/>*/}
+        {/*<HomeWhomWeHelp/>*/}
+        {/*<HomeContact/>*/}
     </>
 )};
 
@@ -31,9 +33,6 @@ const App = () => (
           <Route path="/wylogowano" component={Logout} />
           <Route component={NotFound} />
         </Switch>
-        <footer>
-
-        </footer>
       </Router>
     </div>
 );

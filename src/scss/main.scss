@@ -1,6 +1,20 @@
-
-@import "/settings/_fonts";
-@import "/settings/_colors";
+@import "./settings/fonts";
+@import "./settings/colors";
 body {
   font-family: $font-base;
+}
+.page-header {
+  height: 90vh;
+  background-color: white;
+  color: $brown;
+}
+.homeThreeColumns-header {
+  height: 90vh;
+  background-color: green;
+  color: $brown;
+}
+.homeFourSteps-header {
+  height: 90vh;
+  background-color: darkgrey;
+  color: brown;
 }
