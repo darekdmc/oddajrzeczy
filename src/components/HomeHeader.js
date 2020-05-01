@@ -105,11 +105,11 @@ class TitleWithbuttons extends React.Component {
                     <img src={decoration} width="35%" height="35%" alt="Decoration"/>
                 </div>
                 <div className="page-header-main-buttons-wrapper">
+                    <NavLink to="/logowanie">
                     <button className="page-header-main-button">ODDAJ <br/> RZECZY</button>
                     <button className="page-header-main-button">ZORGANIZUJ <br/> ZBIÓRKĘ</button>
+                    </NavLink>
                 </div>
-
-
             </div>
         )
     }
