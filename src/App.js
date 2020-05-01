@@ -8,6 +8,7 @@ import Register from "./components/Register"
 import Logout from "./components/Logout"
 import HomeThreeColumns from "./components/HomeThreeColumns";
 import HomeFourSteps from "./components/HomeFourSteps";
+import HomeAboutUs from "./components/HomeAboutUs";
 
 const Home = () => {
     return (
@@ -15,7 +16,7 @@ const Home = () => {
         <HomeHeader/>
         <HomeThreeColumns/>
         <HomeFourSteps/>
-        {/*<HomeAboutUs/>*/}
+        <HomeAboutUs/>
         {/*<HomeWhomWeHelp/>*/}
         {/*<HomeContact/>*/}
     </>
