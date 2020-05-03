@@ -1,0 +1,18 @@
+.homeThreeColumns-wrapper {
+  height: 40vh;
+  color: $darkgrey;
+  background-color: $yellow;
+  margin-top: 0;
+  display: flex;
+}
+.homeThreeColumns-c1 {
+  width: 33%;
+  padding: 0 7%;
+  text-align: center;
+  color: $darkgrey;
+  h1 {
+    font-size: 100px;
+    font-weight: 400;
+    margin-bottom: -15px;
+  }
+}

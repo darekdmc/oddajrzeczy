@@ -1,0 +1,55 @@
+.homeFourSteps-header-wrapper {
+  height: 90vh;
+  h2{
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+}
+.homeFourSteps-steps-wrapper {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  height: 35vh;
+}
+.homeFourSteps-steps {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeFourSteps-steps-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.homeFourSteps-steps-title2row {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.homeFourSteps-steps-line {
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+.homeFourSteps-steps-text {
+  margin-top: 10px;
+}
+.homeFourSteps-button {
+  background-color: #fff;
+  border: 1px solid $grey;
+  margin: 20px;
+  outline: none;
+  padding: 20px 60px;
+  width: 350px;
+  color: $grey;
+  font: $font-base;
+  font-size: 38px;
+  font-weight: 300;
+}
+.homeFourSteps-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
