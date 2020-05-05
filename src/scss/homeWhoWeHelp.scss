@@ -1,0 +1,16 @@
+.homeWhoWeHelp-container {
+  height: 90vh;
+  h1{
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+}
+.homeWhoWeHelp-steps-wrapper {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  height: 35vh;
+}

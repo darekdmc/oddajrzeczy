@@ -68,12 +68,12 @@ class BottomNavigation extends React.Component {
                         spy={true}
                         smooth={true}
                         offset={-70}
-                        duration= {1800}
+                        duration= {1600}
                         className="bottom-nav-list-link"
                     >O nas</Link>
                     <Link
                         activeClass="active"
-                        to="homeWhomWeHelp"
+                        to="homeWhoWeHelp"
                         spy={true}
                         smooth={true}
                         offset={-70}

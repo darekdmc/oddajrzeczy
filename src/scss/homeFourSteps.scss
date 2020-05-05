@@ -47,6 +47,9 @@
   font: $font-base;
   font-size: 38px;
   font-weight: 300;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .homeFourSteps-button-wrapper {
   display: flex;

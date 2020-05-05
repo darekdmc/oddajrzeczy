@@ -9,6 +9,7 @@ import Logout from "./components/Logout"
 import HomeThreeColumns from "./components/HomeThreeColumns";
 import HomeFourSteps from "./components/HomeFourSteps";
 import HomeAboutUs from "./components/HomeAboutUs";
+import HomeWhoWeHelp from "./components/HomeWhoWeHelp";
 
 const Home = () => {
     return (
@@ -17,7 +18,7 @@ const Home = () => {
         <HomeThreeColumns/>
         <HomeFourSteps/>
         <HomeAboutUs/>
-        {/*<HomeWhomWeHelp/>*/}
+        <HomeWhoWeHelp/>
         {/*<HomeContact/>*/}
     </>
 )};
