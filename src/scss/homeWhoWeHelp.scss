@@ -14,3 +14,62 @@
   justify-content: center;
   height: 35vh;
 }
+.HomeWhoWeHelp-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.HomeWhoWeHelp-button {
+  background-color: #fff;
+  border: none;
+  margin: 1px 30px;
+  outline: none;
+  padding: 10px 10px;
+  height: 80px;
+  width: 220px;
+  font: $font-base;
+  font-size: 24px;
+  font-weight: 400;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.HomeWhoWeHelp-button1 {
+  background-color: #fff;
+  border: 1px solid $grey;
+  margin: 1px 30px;
+  outline: none;
+  padding: 10px 10px;
+  height: 80px;
+  width: 220px;
+  font: $font-base;
+  font-size: 24px;
+  font-weight: 400;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.HomeWhoWeHelp-pagination {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  li {
+    background-color: darkgrey;
+    padding: 10px;
+    margin-top: 10px;
+
+  }
+}
+.HomeWhoWeHelp-pagination-numbers {
+  display: flex;
+  list-style: none;
+  li {
+    background-color: darkgrey;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+.HomeWhoWeHelp-pagination-numbers li.active {
+  background-color: #1c61bc;
+}

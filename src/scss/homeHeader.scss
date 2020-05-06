@@ -50,6 +50,8 @@
 .bottom-nav-list-link {
   margin-left: 15px;
   padding: 10px 20px;
+  text-decoration: none;
+  color: $darkgrey;
   &:hover {
     cursor: pointer;
   }
@@ -58,6 +60,8 @@
   margin-left: 15px;
   border: 2px solid $darkgrey;
   padding: 10px 20px;
+  text-decoration: none;
+  color: $darkgrey;
   &:hover {
     cursor: pointer;
   }
