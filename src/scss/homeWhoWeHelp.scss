@@ -49,27 +49,47 @@
     cursor: pointer;
   }
 }
+.HomeWhoWeHelp-pagination-wrapper {
+  display: flex;
+  justify-content: center;
+}
 .HomeWhoWeHelp-pagination {
   list-style: none;
   padding: 0;
   margin: 10px;
   li {
-    background-color: darkgrey;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-alt;
+    width: 1000px;
     padding: 10px;
-    margin-top: 10px;
-
+    margin-top: 20px;
+    &:nth-child(-n+2){
+      border-bottom: 1px solid $grey;
+    }
   }
 }
 .HomeWhoWeHelp-pagination-numbers {
   display: flex;
+  justify-content: center;
   list-style: none;
   li {
-    background-color: darkgrey;
     padding: 10px;
     margin: 10px;
     cursor: pointer;
   }
 }
 .HomeWhoWeHelp-pagination-numbers li.active {
-  background-color: #1c61bc;
+  border: 1px solid $grey;
+}
+.HomeWhoWeHelp-li-title{
+  font-size: 28px;
+}
+.HomeWhoWeHelp-li-description {
+  font-style: italic;
+}
+.HomeWhoWeHelp-li-tags {
+  display: flex;
+  width: 300px;
+  align-items: center;
 }

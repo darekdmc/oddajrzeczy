@@ -1,5 +1,6 @@
 import React from "react";
 import decoration from "../assets/Decoration.svg";
+import organizations from "./organizationData"
 
 const homeWhoWeHelp = ()=>{
     return (
@@ -14,44 +15,15 @@ const homeWhoWeHelp = ()=>{
                     <button className="HomeWhoWeHelp-button">Lokalnym<br/>zbiórkom</button>
 
                 </div>
-            <Pagination/>
+                <div className="HomeWhoWeHelp-pagination-wrapper">
+                <Pagination/>
+                </div>
         </div>
     )
 };
 
 
-const organizations = [
-    {
-        title: "Zakład ubezpieczeń",
-        description: "pomoc finansowa w czasie choroby dla osób zatrudnionych",
-        tags: "W chwili obecnej nie jest możliwe wybranie tej organizacji"
-    },
-    {
-        title: "MOPS",
-        description: "pomoc dla osób z problemami",
-        tags: "Miejski ośrodek pomocy społecznej"
-    },
-    {
-        title: "MOPS2",
-        description: "pomoc dla osób z problemami2",
-        tags: "Miejski ośrodek pomocy społecznej2"
-    },
-    {
-        title: "LOREMMOPS",
-        description: "pomoc dla osób z problemami lorem",
-        tags: "Miejski ośrodek pomocy społecznej lorem"
-    },
-    {
-        title: "LOREMMOPS1",
-        description: "pomoc dla osób z problemami lorem1",
-        tags: "Miejski ośrodek pomocy społecznej lorem1"
-    },
-    {
-        title: "BARKA",
-        description: "pomoc dla osób z problemami alkoholowymi",
-        tags: "Ośrodek pomocy społecznej dla osób uzależnionych"
-    }
-];
+
 
 class Pagination extends React.Component {
     constructor() {
@@ -76,7 +48,14 @@ class Pagination extends React.Component {
         const currentData = data.slice(indexOfFirst, indexOfLast);
 
         const elements = currentData.map((element, i) => {
-            return <li key={i}> {element.title}</li>
+            return (
+                <li key={i}>
+                    <div className="HomeWhoWeHelp-li-wrapper">
+                        <div className="HomeWhoWeHelp-li-title">{element.title}</div>
+                        <div className="HomeWhoWeHelp-li-description">{element.description}</div>
+                    </div>
+                    <div className="HomeWhoWeHelp-li-tags">{element.tags}</div>
+                </li>)
         });
 
         const pageNumbers = [];
