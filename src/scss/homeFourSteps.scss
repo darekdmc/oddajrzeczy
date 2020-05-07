@@ -1,7 +1,7 @@
 .homeFourSteps-header-wrapper {
   height: 90vh;
   h2{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     text-align: center;
     margin-top: 50px;
@@ -41,11 +41,11 @@
   border: 1px solid $grey;
   margin: 20px;
   outline: none;
-  padding: 20px 60px;
-  width: 350px;
+  padding: 16px 40px;
+  width: 280px;
   color: $grey;
   font: $font-base;
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 300;
   &:hover {
     cursor: pointer;
@@ -55,4 +55,5 @@
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }

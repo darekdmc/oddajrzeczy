@@ -16,7 +16,7 @@ const HomeAboutUs = ()=>{
                 <span className="homeAboutUs-text">nuts black-eyed pea prairie turnip leek lentil</span>
                 <span className="homeAboutUs-text">turnip greens parsnip.</span>
                 <div className="homeAboutUs-signature">
-                    <img src={signaturesvg} width="100%" height="100%" alt="Signature"/>
+                    <img src={signaturesvg} width="90%" height="90%" alt="Signature"/>
                 </div>
             </div>
             <div className="aboutUs-banner">

@@ -1,3 +1,6 @@
+const localCollectionDescription = "To są lokalne zbiórki";
+
+
 const localCollections = [
     {
         title: "Zbiórka \"Na wnuczka\"",
@@ -75,4 +78,4 @@ const localCollections = [
         tags: "ubrania, meble, zabawki, lorem ipsum8"
     }
 ];
-export default localCollections
+export  {localCollections, localCollectionDescription}

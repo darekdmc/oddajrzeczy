@@ -3,21 +3,21 @@
   height: 100vh;
 }
 .header-banner {
-  margin-left: -26%;
+  margin-left: -380px;
 }
 .main-nav {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 50%;
+  width: 70%;
 }
 .top-nav-list {
-  font-size: 14px;
-  margin-top: 40px;
+  font-size: 12px;
+  margin-top: 20px;
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  margin-right: 15%;
+  margin-right: 130px;
   color: $darkgrey;
   .top-nav-list-link1 {
     text-decoration: none;
@@ -37,8 +37,8 @@
   }
 }
 .bottom-nav-list {
-  font-size: 16px;
-  margin-top: 35px;
+  font-size: 14px;
+  margin-top: 25px;
   padding: 10px;
   list-style: none;
   display: flex;
@@ -58,7 +58,7 @@
 }
 .bottom-nav-list-link1 {
   margin-left: 15px;
-  border: 2px solid $darkgrey;
+  border: 1px solid $darkgrey;
   padding: 10px 20px;
   text-decoration: none;
   color: $darkgrey;
@@ -67,7 +67,7 @@
   }
 }
 .page-header-main {
-  font-size: 38px;
+  font-size: 30px;
   margin-top: 12%;
   text-align: center;
   margin-right: 20%;
@@ -84,11 +84,12 @@
   border: 1px solid $grey;
   margin: 20px;
   outline: none;
-  padding: 20px 60px;
-  width: 43%;
+  padding: 16px 40px;
+  width: 40%;
   color: $grey;
   font: $font-base;
   font-weight: 300;
+  font-size: 28px;
   &:hover {
     cursor: pointer;
   }

@@ -2,7 +2,7 @@ import React from "react";
 import decoration from "../assets/Decoration.svg";
 import organizations from "./organizationData"
 import fundations from "./fundationsData"
-import localCollections from "./collectionsData"
+import {localCollections, localCollectionDescription} from "./collectionsData"
 
 const homeWhoWeHelp = ()=>{
     return (
@@ -10,8 +10,6 @@ const homeWhoWeHelp = ()=>{
                 <h1 className="homeWhoWeHelp-header">Komu pomagamy?</h1>
                 <div className="page-header-main-decoration-wrapper">
                     <img src={decoration} width="13%" height="13%" alt="Decoration"/>
-                </div>
-                <div className="HomeWhoWeHelp-buttons">
                 </div>
                 <div className="HomeWhoWeHelp-pagination-wrapper">
                 <Pagination/>
@@ -23,8 +21,8 @@ const homeWhoWeHelp = ()=>{
 
 
 class Pagination extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             data: organizations,
             currentPage: 1,
@@ -35,17 +33,20 @@ class Pagination extends React.Component {
         onClick(e,buttonNumber) {
             if (buttonNumber === 1) {
                 this.setState({
-                    data: fundations
+                    data: fundations,
+                    currentPage:1
                 })
                 }
             else if (buttonNumber === 2) {
                     this.setState({
-                    data: organizations
+                        data: organizations,
+                        currentPage:1
                     })
                 }
             else if (buttonNumber === 3) {
                     this.setState({
-                    data: localCollections
+                        data: localCollections,
+                        currentPage:1
                     })
                 }
             }
@@ -87,10 +88,11 @@ class Pagination extends React.Component {
             return (
                 <section>
                     <div className="HomeWhoWeHelp-buttons">
-                    <button className="HomeWhoWeHelp-button" onClick={e => this.onClick(e,1)}>Fundacjom</button>
-                    <button className="HomeWhoWeHelp-button1" onClick={e => this.onClick(e,2)}>Organizacjom<br/>pozarządowym</button>
-                    <button className="HomeWhoWeHelp-button" onClick={e => this.onClick(e,3)}>Lokalnym<br/>zbiórkom</button>
-                </div>
+                        <button className="HomeWhoWeHelp-button" onClick={e => this.onClick(e,1)}>Fundacjom</button>
+                        <button className="HomeWhoWeHelp-button1" onClick={e => this.onClick(e,2)}>Organizacjom<br/>pozarządowym</button>
+                        <button className="HomeWhoWeHelp-button" onClick={e => this.onClick(e,3)}>Lokalnym<br/>zbiórkom</button>
+                    </div>
+                    <div>{localCollectionDescription}</div>
                     <ul className="HomeWhoWeHelp-pagination">
                         {elements}
                     </ul>
