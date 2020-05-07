@@ -1,6 +1,8 @@
 import React from "react";
 import decoration from "../assets/Decoration.svg";
 import organizations from "./organizationData"
+import fundations from "./fundationsData"
+import localCollections from "./collectionsData"
 
 const homeWhoWeHelp = ()=>{
     return (
@@ -10,10 +12,6 @@ const homeWhoWeHelp = ()=>{
                     <img src={decoration} width="13%" height="13%" alt="Decoration"/>
                 </div>
                 <div className="HomeWhoWeHelp-buttons">
-                    <button className="HomeWhoWeHelp-button">Fundacjom</button>
-                    <button className="HomeWhoWeHelp-button1">Organizacjom<br/>pozarządowym</button>
-                    <button className="HomeWhoWeHelp-button">Lokalnym<br/>zbiórkom</button>
-
                 </div>
                 <div className="HomeWhoWeHelp-pagination-wrapper">
                 <Pagination/>
@@ -21,7 +19,6 @@ const homeWhoWeHelp = ()=>{
         </div>
     )
 };
-
 
 
 
@@ -35,6 +32,24 @@ class Pagination extends React.Component {
 
         };
     }
+        onClick(e,buttonNumber) {
+            if (buttonNumber === 1) {
+                this.setState({
+                    data: fundations
+                })
+                }
+            else if (buttonNumber === 2) {
+                    this.setState({
+                    data: organizations
+                    })
+                }
+            else if (buttonNumber === 3) {
+                    this.setState({
+                    data: localCollections
+                    })
+                }
+            }
+
         handleClick = (event , i) => {
         this.setState({
             currentPage: i
@@ -62,7 +77,7 @@ class Pagination extends React.Component {
         for(let i = 1; i <= Math.ceil(data.length/dataPerPage); i++) {
             const el = <li key={i}
                     onClick={e=>this.handleClick(e,i)}
-            className={this.state.currentPage == i ? "active" : ""}
+            className={this.state.currentPage === i ? "active" : ""}
             >
                     {i}
             </li>;
@@ -71,6 +86,11 @@ class Pagination extends React.Component {
 
             return (
                 <section>
+                    <div className="HomeWhoWeHelp-buttons">
+                    <button className="HomeWhoWeHelp-button" onClick={e => this.onClick(e,1)}>Fundacjom</button>
+                    <button className="HomeWhoWeHelp-button1" onClick={e => this.onClick(e,2)}>Organizacjom<br/>pozarządowym</button>
+                    <button className="HomeWhoWeHelp-button" onClick={e => this.onClick(e,3)}>Lokalnym<br/>zbiórkom</button>
+                </div>
                     <ul className="HomeWhoWeHelp-pagination">
                         {elements}
                     </ul>
