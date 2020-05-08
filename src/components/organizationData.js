@@ -1,3 +1,5 @@
+const organizationsDescription = "Organizacje Państwowe powołane ustawą finansowane są z budżetu państwa zasilanego przez podatników, lorem ipsum lorem ipsum";
+
 const organizations = [
     {
         title: "Organizacja \"Zakład ubezpieczeń\"",
@@ -30,4 +32,4 @@ const organizations = [
         tags: "Ośrodek pomocy społecznej dla osób uzależnionych"
     }
 ];
-export default organizations
+export {organizations, organizationsDescription}

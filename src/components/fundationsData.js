@@ -1,3 +1,5 @@
+const fundationDescription = "Działalność fundacji non profit ukierunkowana jest na pomoc, lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+
 const fundations = [
     {
         title: "Fundacja \"Dbam o zdrowie\"",
@@ -75,4 +77,4 @@ const fundations = [
         tags: "ubrania, meble, zabawki, ipsum8"
     }
 ];
-export default fundations
+export {fundations, fundationDescription}
