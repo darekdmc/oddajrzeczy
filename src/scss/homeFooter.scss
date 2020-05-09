@@ -1,0 +1,23 @@
+.homeFooter-container {
+  height: 20px;
+  display: flex;
+}
+.HomeFooter-wrapper {
+  display: inline;
+}
+.HomeFooter-text {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+  z-index: 9999;
+}
+.HomeFooterIcon-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -35px;
+  z-index: 9999;
+}
+.HomeFooter-icon-is {
+  margin-left: 20px;
+  margin-right: 150px;
+}

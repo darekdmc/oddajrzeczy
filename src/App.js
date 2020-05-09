@@ -10,6 +10,8 @@ import HomeThreeColumns from "./components/HomeThreeColumns";
 import HomeFourSteps from "./components/HomeFourSteps";
 import HomeAboutUs from "./components/HomeAboutUs";
 import HomeWhoWeHelp from "./components/HomeWhoWeHelp";
+import HomeContact from "./components/HomeContact";
+import HomeFooter from "./components/HomeFooter";
 
 const Home = () => {
     return (
@@ -19,7 +21,8 @@ const Home = () => {
         <HomeFourSteps/>
         <HomeAboutUs/>
         <HomeWhoWeHelp/>
-        {/*<HomeContact/>*/}
+        <HomeContact/>
+        <HomeFooter/>
     </>
 )};
 

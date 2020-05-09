@@ -98,7 +98,9 @@ class Pagination extends React.Component {
                         <button className="HomeWhoWeHelp-button" onClick={e => this.onClick(e,3)}>Lokalnym<br/>zbiórkom</button>
                     </div>
                     <div className="HomeWhoWeHelp-descriptions-wrapper">
-                    <div className="HomeWhoWeHelp-descriptions">{this.state.descriptions}</div>
+                    <div className="HomeWhoWeHelp-descriptions">
+                        {this.state.descriptions}
+                    </div>
                     </div>
                     <ul className="HomeWhoWeHelp-pagination">
                         {elements}
