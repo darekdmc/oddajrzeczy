@@ -14,6 +14,18 @@ const Login = ()=>{
                 <div className="page-header-main-decoration-wrapper">
                     <img src={decoration} width="260px" height="40px" alt="Decoration"/>
                 </div>
+                <form className="Logform-container">
+                    <div className="LogForm-wrapper">
+                        <div className="Log-email-wrapper">
+                            <label className="Log-labels">Email</label>
+                            <input className="Log-email"></input>
+                        </div>
+                        <div className="Log-email-wrapper">
+                            <label className="Log-labels">Hasło</label>
+                            <input className="Log-pass"></input>
+                        </div>
+                    </div>
+                </form>
             </div>
         </>
 

@@ -29,7 +29,7 @@ class ContactForm extends React.Component {
         this.state = {
             // id:
             name: "",
-            email: [],
+            email: "",
             message: "",
         };
     }
@@ -39,14 +39,10 @@ class ContactForm extends React.Component {
             name: event.target.value
         });
     };
-    handleChangeEmail = (e) => {
-        e.preventDefault();
-        this.setState(state => {
-            const email = state.email.concat(state.value);
-            return {
-                email,
-                value:""
-            }
+    handleChangeEmail = (event) => {
+        this.setState({
+            ...this.state,
+            email: event.target.value
         });
 
     };

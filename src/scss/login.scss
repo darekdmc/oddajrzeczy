@@ -5,3 +5,34 @@
   height: 20vh;
   width: 50%;
 }
+.Logform-container{
+  display: flex;
+  width: 100vw;
+  height: 25vh;
+}
+.LogForm-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40%;
+  width: 20%;
+  background-color: $white;
+}
+.Log-email, .Log-pass {
+  border-bottom: 1px solid black ;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  outline: none;
+  margin-top: 20px;
+  line-height: 23px;
+  background: none;
+}
+.Log-email-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 14px;
+
+}
