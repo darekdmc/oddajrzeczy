@@ -36,3 +36,27 @@
   margin: 14px;
 
 }
+.Log-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.Log-button {
+  margin-right: 7%;
+  margin-top: 45px;
+  height: 50px;
+  width: 150px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.Log-button1 {
+  margin-left: 7%;
+  margin-top: 45px;
+  height: 50px;
+  width: 150px;
+  background: none;
+  border: 1px solid black;
+  cursor: pointer;
+  outline: none;
+}

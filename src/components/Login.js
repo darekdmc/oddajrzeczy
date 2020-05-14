@@ -1,7 +1,8 @@
 import React from "react";
 import LogNavigation from "./LogNavigation"
-
+import {HashLink as Link} from "react-router-hash-link";
 import decoration from "../assets/Decoration.svg"
+
 
 const Login = ()=>{
     return (
@@ -26,6 +27,12 @@ const Login = ()=>{
                         </div>
                     </div>
                 </form>
+                <div className="Log-button-wrapper">
+                    <Link to="/rejestracja">
+                    <button className="Log-button">Załóż konto</button>
+                    </Link>
+                    <button className="Log-button1" >Zaloguj się</button>
+                </div>
             </div>
         </>
 
